@@ -1,0 +1,130 @@
+body{
+    background:#222;
+    color:#fff;
+    font-family:system-ui;
+}
+#seccionResultados{
+    margin:1em;
+}
+#colorFondo{
+    width:2.5rem;
+    height:2rem;
+    margin-left:0.35rem;
+    vertical-align:middle;
+    cursor:pointer;
+}
+#resultados{
+    box-sizing:border-box;
+    width:min(100%, 760px);
+    margin-top:1rem;
+    padding:1rem;
+    background:#303030;
+    border:1px solid #484848;
+    border-radius:10px;
+}
+#resultados h2{
+    margin:0 0 0.75rem;
+    font-size:1.2rem;
+}
+.tabla-resultados-contenedor{
+    overflow-x:auto;
+}
+.tabla-resultados{
+    width:100%;
+    border-collapse:collapse;
+    text-align:left;
+}
+.tabla-resultados th,
+.tabla-resultados td{
+    padding:0.7rem 0.85rem;
+    border-bottom:1px solid #505050;
+}
+.tabla-resultados th{
+    color:#d0d0d0;
+    font-size:0.9rem;
+}
+.tabla-resultados tbody tr:last-child td{
+    border-bottom:0;
+}
+.tabla-resultados tbody tr:nth-child(even){
+    background:#383838;
+}
+.resultados-vacios{
+    margin:0;
+}
+#inicio{
+    margin:0.5em;
+    width:100%;
+}
+#dificultad{
+    display:block;
+    box-sizing:border-box;
+    width:min(100%, 420px);
+    margin:0.75rem auto;
+    padding:0.6rem;
+}
+#nombre{
+    display:block;
+    margin:0.5rem auto 1rem;
+}
+label[for="dificultad"]{
+    display:block;
+}
+#primeraparte{
+    margin:200px auto;
+    text-align:center;
+    width:60%;
+}
+.mensaje{
+    color:red;
+}
+.pista{
+    white-space:pre-line;
+}
+.nombre{
+    font-size:24px;
+}
+
+#juego{
+    display: none;
+    box-sizing: border-box;
+    width: min(90%, 600px);
+    margin: 10vh auto;
+    padding: 2rem;
+    text-align: center;
+    background: #303030;
+    border-radius: 12px;
+}
+#gameOver{
+    box-sizing:border-box;
+    width:min(90%, 600px);
+    margin:10vh auto;
+    padding:2rem;
+    text-align:center;
+    background:#303030;
+    border-radius:12px;
+}
+#pregunta{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+#numerouser{
+    display: block;
+    box-sizing: border-box;
+    width: min(100%, 320px);
+    height: 3.5rem;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#juego button{
+    margin: 0.35rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+}
+#contador,
+#intentosRestantes,
+.mensaje1,
+.pista{
+    margin-top: 0.75rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="musica" autoplay loop preload="auto" hidden>
+            <source src="Musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <section id="seccionResultados">
+        <button id="alternarMusica" type="button" aria-pressed="false">
+            Silenciar música
+        </button>
+        <button id="mostrarResultados" type="button" aria-expanded="false" aria-controls="resultados">
+            Ver resultados
+        </button>
+        <label for="colorFondo">Color de fondo:</label>
+        <input type="color" id="colorFondo" value="#222222">
+        <div id="resultados" hidden aria-live="polite"></div>
+    </section>
+
+    <section id="primeraparte">
+        <div class="nombre">
+            Escribe tu nombre
+        </div>
+        <input type="text" id="nombre">
+        <label for="dificultad">Elige la dificultad:</label>
+        <select id="dificultad">
+            <option value="facilito">Facilito (0 a 10, 7 intentos)</option>
+            <option value="medio">Medio (0 a 100, 10 intentos)</option>
+            <option value="dificilisimo">Dificilísimo (0 a 1000, 30 intentos)</option>
+        </select>
+        <button id="inicio">Iniciar</button>
+        <div class="mensaje"></div>
+    </section>
+
+    <section id="juego">
+        <div id="contador"></div>
+        <div id="intentosRestantes"></div>
+        <div id="pregunta">
+           adivina el numero
+        </div>
+        <input type="number" id="numerouser">
+        <button id="jugar">
+               jugar
+        </button>
+        <button id="reiniciar" type="button">Reiniciar</button>
+        <div class="mensaje1"></div>
+        <div class="pista"></div>
+    </section>
+
+    <section id="gameOver" hidden aria-live="polite">
+        <h1>Game over</h1>
+        <p id="mensajeGameOver"></p>
+        <button id="intentarDeNuevo" type="button">Intentar de nuevo</button>
+        <button id="cambiarDificultad" type="button">Cambiar dificultad</button>
+    </section>
+   
+    <script src="juego1.js"></script>
+</body>
+</html>
